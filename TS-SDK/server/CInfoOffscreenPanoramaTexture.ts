@@ -15,5 +15,5 @@ export const server_CInfoOffscreenPanoramaTexture  = {
 	m_nTargetChangeCount: 1256n, // int32_t m_nTargetChangeCount; |  0x4e8 | Schema_Builtin | Size: 0x4
 	m_vecCSSClasses: 1264n, // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlSymbolLarge>  | Schema_Atomic | Size: 0x18
 	m_szTargetsName: 1288n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
-	m_AdditionalTargetEntities: 1296n, // server::CUtlVector<GlobalTypes::CHandle<server::CBaseModelEntity>>  | Schema_Atomic | Size: 0x18
+	m_AdditionalTargetEntities: 1296n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseModelEntity>>  | Schema_Atomic | Size: 0x18
 }

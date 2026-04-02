@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -44,8 +44,8 @@ namespace CS2 {
 			char m_nHaloIndex[0x8]; // 0xec8 | Schema_Atomic | Size: 0x8
 			client::BeamType_t m_nBeamType; // 0xed0 | Schema_DeclaredEnum | Size: 0x4
 			uint32_t m_nBeamFlags; // 0xed4 | Schema_Builtin | Size: 0x4
-			// client::CHandle< C_BaseEntity > m_hAttachEntity[10]; // 0xed8 | Schema_FixedArray | Size: 0x28
-			char m_hAttachEntity[0x28]; // 0xed8 | Schema_FixedArray | Size: 0x4
+			GlobalTypes::CHandle< C_BaseEntity > m_hAttachEntity[10]; // 0xed8 | Schema_FixedArray | Size: 0x28
+			// char m_hAttachEntity[0x28]; // 0xed8 | Schema_FixedArray | Size: 0x4
 			modellib::AttachmentHandle_t m_nAttachIndex[10]; // 0xf00 | Schema_FixedArray | Size: 0xa
 			S2_PAD(0x2);
 			float32 m_fWidth; // 0xf0c | Schema_Builtin | Size: 0x4

@@ -17,7 +17,7 @@ export const server_CCSPlayerPawn  = {
 	m_szLastPlaceName: 3768n, // char m_szLastPlaceName[18]; |  0xeb8 | Schema_FixedArray | Size: 0x12
 	m_bInHostageResetZone: 4008n, // bool m_bInHostageResetZone; |  0xfa8 | Schema_Builtin | Size: 0x1
 	m_bInBuyZone: 4009n, // bool m_bInBuyZone; |  0xfa9 | Schema_Builtin | Size: 0x1
-	m_TouchingBuyZones: 4016n, // server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
+	m_TouchingBuyZones: 4016n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
 	m_bWasInBuyZone: 4040n, // bool m_bWasInBuyZone; |  0xfc8 | Schema_Builtin | Size: 0x1
 	m_bInHostageRescueZone: 4041n, // bool m_bInHostageRescueZone; |  0xfc9 | Schema_Builtin | Size: 0x1
 	m_bInBombZone: 4042n, // bool m_bInBombZone; |  0xfca | Schema_Builtin | Size: 0x1

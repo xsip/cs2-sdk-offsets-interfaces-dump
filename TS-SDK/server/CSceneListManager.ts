@@ -5,7 +5,7 @@ import {server_CLogicalEntity} from './CLogicalEntity';
 // BaseClass: : public CS2::server::CLogicalEntity
 export const server_CSceneListManager  = {
 	...server_CLogicalEntity,
-	m_hListManagers: 1192n, // server::CUtlVector<GlobalTypes::CHandle<server::CSceneListManager>>  | Schema_Atomic | Size: 0x18
+	m_hListManagers: 1192n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CSceneListManager>>  | Schema_Atomic | Size: 0x18
 	m_iszScenes: 1216n, // GlobalTypes::CUtlSymbolLarge[16]  | Schema_FixedArray | Size: 0x80
 	m_hScenes: 1344n, // GlobalTypes::CHandle  | Schema_FixedArray | Size: 0x40
 }

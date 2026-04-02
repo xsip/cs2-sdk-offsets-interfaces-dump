@@ -5,5 +5,5 @@ import {modellib_CBaseConstraint} from './CBaseConstraint';
 // BaseClass: : public CS2::modellib::CBaseConstraint
 export const modellib_CBoneConstraintPoseSpaceBone  = {
 	...modellib_CBaseConstraint,
-	m_inputList: 96n, // GlobalTypes::CUtlVector<modellib::Input_t>  | Schema_Atomic | Size: 0x18
+	m_inputList: 96n, // GlobalTypes::CUtlVector<modellib::CBoneConstraintPoseSpaceBone_Input_t>  | Schema_Atomic | Size: 0x18
 }

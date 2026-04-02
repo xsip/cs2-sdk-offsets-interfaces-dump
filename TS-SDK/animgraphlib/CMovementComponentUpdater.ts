@@ -12,5 +12,5 @@ export const animgraphlib_CMovementComponentUpdater  = {
 	m_bMoveVarsDisabled: 112n, // bool m_bMoveVarsDisabled; |  0x70 | Schema_Builtin | Size: 0x1
 	m_bNetworkPath: 113n, // bool m_bNetworkPath; |  0x71 | Schema_Builtin | Size: 0x1
 	m_bNetworkFacing: 114n, // bool m_bNetworkFacing; |  0x72 | Schema_Builtin | Size: 0x1
-	m_paramHandles: 115n, // GlobalTypes::CAnimParamHandle[34]  | Schema_FixedArray | Size: 0x908
+	m_paramHandles: 115n, // GlobalTypes::CAnimParamHandle[34]  | Schema_FixedArray | Size: 0x44
 }

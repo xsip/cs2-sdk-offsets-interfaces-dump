@@ -14,5 +14,5 @@ export const server_CPulseCell_Outflow_ScriptedSequence  = {
 	m_vecAdditionalActors: 144n, // GlobalTypes::CUtlVector<server::PulseScriptedSequenceData_t>  | Schema_Atomic | Size: 0x18
 	m_OnFinished: 168n, // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
 	m_OnCanceled: 240n, // pulse_runtime_lib::CPulse_ResumePoint  | Schema_DeclaredClass | Size: 0x48
-	m_Triggers: 312n, // server::CUtlVector<pulse_runtime_lib::CPulse_OutflowConnection>  | Schema_Atomic | Size: 0x18
+	m_Triggers: 312n, // GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_OutflowConnection>  | Schema_Atomic | Size: 0x18
 }

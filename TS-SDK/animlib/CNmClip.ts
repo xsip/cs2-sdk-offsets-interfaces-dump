@@ -17,6 +17,6 @@ export const animlib_CNmClip  = {
 	m_syncTrack: 248n, // animlib::CNmSyncTrack  | Schema_DeclaredClass | Size: 0xb0
 	m_rootMotion: 432n, // animlib::CNmRootMotionData  | Schema_DeclaredClass | Size: 0x50
 	m_bIsAdditive: 512n, // bool m_bIsAdditive; |  0x200 | Schema_Builtin | Size: 0x1
-	m_modelSpaceSamplingChain: 520n, // GlobalTypes::CUtlVector<animlib::ModelSpaceSamplingChainLink_t>  | Schema_Atomic | Size: 0x18
+	m_modelSpaceSamplingChain: 520n, // GlobalTypes::CUtlVector<animlib::CNmClip_ModelSpaceSamplingChainLink_t>  | Schema_Atomic | Size: 0x18
 	m_modelSpaceBoneSamplingIndices: 544n, // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
 }

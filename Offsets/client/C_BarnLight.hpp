@@ -28,7 +28,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_QueuedLightStyleStrings = 0xed0; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_LightStyleEvents = 0xee8; // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 				constexpr std::ptrdiff_t m_LightStyleTargets = 0xf00; // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseModelEntity>>  | Schema_Atomic | Size: 0x18
-				constexpr std::ptrdiff_t m_StyleEvent = 0xf18; // GlobalTypes::CEntityIOOutput[4]  | Schema_FixedArray | Size: 0x180
+				constexpr std::ptrdiff_t m_StyleEvent = 0xf18; // GlobalTypes::CEntityIOOutput[4]  | Schema_FixedArray | Size: 0x60
 				constexpr std::ptrdiff_t m_hLightCookie = 0xf78; // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
 				constexpr std::ptrdiff_t m_flShape = 0xf80; // float32 m_flShape; |  0xf80 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flSoftX = 0xf84; // float32 m_flSoftX; |  0xf84 | Schema_Builtin | Size: 0x4

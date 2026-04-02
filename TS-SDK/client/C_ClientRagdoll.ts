@@ -17,6 +17,6 @@ export const client_C_ClientRagdoll  = {
 	m_iEyeAttachment: 4485n, // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
 	m_bFadingOut: 4486n, // bool m_bFadingOut; |  0x1186 | Schema_Builtin | Size: 0x1
 	m_flScaleEnd: 4488n, // float32 m_flScaleEnd[10]; |  0x1188 | Schema_FixedArray | Size: 0x28
-	m_flScaleTimeStart: 4528n, // GlobalTypes::GameTime_t[10]  | Schema_FixedArray | Size: 0x190
-	m_flScaleTimeEnd: 4568n, // GlobalTypes::GameTime_t[10]  | Schema_FixedArray | Size: 0x190
+	m_flScaleTimeStart: 4528n, // GlobalTypes::GameTime_t[10]  | Schema_FixedArray | Size: 0x28
+	m_flScaleTimeEnd: 4568n, // GlobalTypes::GameTime_t[10]  | Schema_FixedArray | Size: 0x28
 }

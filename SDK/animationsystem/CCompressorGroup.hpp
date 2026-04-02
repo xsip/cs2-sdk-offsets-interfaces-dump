@@ -6,12 +6,13 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
-
 #include "../mathlib_extended/fieldtype_t.hpp"
+
+
 
 
 
@@ -26,7 +27,7 @@ namespace CS2 {
 			// char m_szChannelClass[0x18]; // 0x8 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<char*> m_szVariableName; // 0x20 | Schema_Atomic | Size: 0x18
 			// char m_szVariableName[0x18]; // 0x20 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<mathlib_extended::fieldtype_t > m_nType; // 0x38 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<mathlib_extended::fieldtype_t> m_nType; // 0x38 | Schema_Atomic | Size: 0x18
 			// char m_nType[0x18]; // 0x38 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int32 > m_nFlags; // 0x50 | Schema_Atomic | Size: 0x18
 			// char m_nFlags[0x18]; // 0x50 | Schema_Atomic | Size: 0x18
@@ -34,26 +35,26 @@ namespace CS2 {
 			// char m_szGrouping[0x18]; // 0x68 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< int32 > m_nCompressorIndex; // 0x80 | Schema_Atomic | Size: 0x18
 			// char m_nCompressorIndex[0x18]; // 0x80 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<uintptr_t>> m_szElementNames; // 0x98 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<char*>> m_szElementNames; // 0x98 | Schema_Atomic | Size: 0x18
 			// char m_szElementNames[0x18]; // 0x98 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<uintptr_t>> m_nElementUniqueID; // 0xb0 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<GlobalTypes::CUtlVector<int32>> m_nElementUniqueID; // 0xb0 | Schema_Atomic | Size: 0x18
 			// char m_nElementUniqueID[0x18]; // 0xb0 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector< uint32 > m_nElementMask; // 0xc8 | Schema_Atomic | Size: 0x18
 			// char m_nElementMask[0x18]; // 0xc8 | Schema_Atomic | Size: 0x18
 			S2_PAD(0x18);
-			GlobalTypes::CUtlVector</*耑��::CCompressor**/uintptr_t*> m_vectorCompressor; // 0xf8 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector</*����::CCompressor* <Vector>*/uintptr_t> m_vectorCompressor; // 0xf8 | Schema_Atomic | Size: 0x18
 			// char m_vectorCompressor[0x18]; // 0xf8 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector</*耑��::CCompressor**/uintptr_t*> m_quaternionCompressor; // 0x110 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<uintptr_t/*����::CCompressor* <QuaternionStorage>*/ > m_quaternionCompressor; // 0x110 | Schema_Atomic | Size: 0x18
 			// char m_quaternionCompressor[0x18]; // 0x110 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector</*耑��::CCompressor**/uintptr_t*> m_intCompressor; // 0x128 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector</*����::CCompressor*<int32>*/uintptr_t> m_intCompressor; // 0x128 | Schema_Atomic | Size: 0x18
 			// char m_intCompressor[0x18]; // 0x128 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector</*耑��::CCompressor**/uintptr_t*> m_boolCompressor; // 0x140 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector</*����::CCompressor*<bool>*/uintptr_t> m_boolCompressor; // 0x140 | Schema_Atomic | Size: 0x18
 			// char m_boolCompressor[0x18]; // 0x140 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector</*耑��::CCompressor**/uintptr_t*> m_colorCompressor; // 0x158 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector</*����::CCompressor*<Color>*/ uintptr_t> m_colorCompressor; // 0x158 | Schema_Atomic | Size: 0x18
 			// char m_colorCompressor[0x18]; // 0x158 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector</*耑��::CCompressor**/uintptr_t*> m_vector2DCompressor; // 0x170 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector</*����::CCompressor*<Vector2D>*/ uintptr_t> m_vector2DCompressor; // 0x170 | Schema_Atomic | Size: 0x18
 			// char m_vector2DCompressor[0x18]; // 0x170 | Schema_Atomic | Size: 0x18
-			GlobalTypes::CUtlVector</*耑��::CCompressor**/uintptr_t*> m_vector4DCompressor; // 0x188 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector</*����::CCompressor*<Vector4D>*/ uintptr_t> m_vector4DCompressor; // 0x188 | Schema_Atomic | Size: 0x18
 			// char m_vector4DCompressor[0x18]; // 0x188 | Schema_Atomic | Size: 0x18
 		};
 #ifdef USE_STATIC_ASSERTS

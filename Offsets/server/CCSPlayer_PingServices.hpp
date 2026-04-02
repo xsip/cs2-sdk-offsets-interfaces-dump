@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace server {
 			// Class size: 0x60
 			namespace CCSPlayer_PingServices /*: public CS2::client::CPlayerPawnComponent*/ {
-				constexpr std::ptrdiff_t m_flPlayerPingTokens = 0x48; // GlobalTypes::GameTime_t[5]  | Schema_FixedArray | Size: 0x64
+				constexpr std::ptrdiff_t m_flPlayerPingTokens = 0x48; // GlobalTypes::GameTime_t[5]  | Schema_FixedArray | Size: 0x14
 				constexpr std::ptrdiff_t m_hPlayerPing = 0x5c; // GlobalTypes::CHandle<server::CPlayerPing>  | Schema_Atomic | Size: 0x4
 			}
 		}

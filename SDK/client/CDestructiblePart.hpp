@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -26,7 +26,7 @@ namespace CS2 {
 			client::HitGroup_t m_nHitGroup; // 0x8 | Schema_DeclaredEnum | Size: 0x4
 			bool m_bDisableHitGroupWhenDestroyed; // 0xc | Schema_Builtin | Size: 0x1
 			S2_PAD(0x3);
-			GlobalTypes::CUtlVector< HitGroup_t > m_nOtherHitgroupsToDestroyWhenFullyDestructed; // 0x10 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<client::HitGroup_t> m_nOtherHitgroupsToDestroyWhenFullyDestructed; // 0x10 | Schema_Atomic | Size: 0x18
 			// char m_nOtherHitgroupsToDestroyWhenFullyDestructed[0x18]; // 0x10 | Schema_Atomic | Size: 0x18
 			bool m_bOnlyDestroyWhenGibbing; // 0x28 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);

@@ -6,13 +6,14 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
 #include "CBaseModelEntity.hpp"
 #include "../entity2/GameTime_t.hpp"
 #include "../client/BeamType_t.hpp"
+
 #include "../modellib/AttachmentHandle_t.hpp"
 #include "../client/BeamClipStyle_t.hpp"
 
@@ -42,8 +43,8 @@ namespace CS2 {
 			char m_nHaloIndex[0x8]; // 0x750 | Schema_Atomic | Size: 0x8
 			client::BeamType_t m_nBeamType; // 0x758 | Schema_DeclaredEnum | Size: 0x4
 			uint32_t m_nBeamFlags; // 0x75c | Schema_Builtin | Size: 0x4
-			// server::CHandle< CBaseEntity > m_hAttachEntity[10]; // 0x760 | Schema_FixedArray | Size: 0x28
-			char m_hAttachEntity[0x28]; // 0x760 | Schema_FixedArray | Size: 0x4
+			GlobalTypes::CHandle< CBaseEntity > m_hAttachEntity[10]; // 0x760 | Schema_FixedArray | Size: 0x28
+			// char m_hAttachEntity[0x28]; // 0x760 | Schema_FixedArray | Size: 0x4
 			modellib::AttachmentHandle_t m_nAttachIndex[10]; // 0x788 | Schema_FixedArray | Size: 0xa
 			S2_PAD(0x2);
 			float32 m_fWidth; // 0x794 | Schema_Builtin | Size: 0x4

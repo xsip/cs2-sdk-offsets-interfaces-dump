@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -22,8 +22,8 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Outflow_CycleShuffled : public CS2::pulse_runtime_lib::CPulseCell_BaseFlow {
 		public:
-			// GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_OutflowConnection> m_Outputs; // 0x48 | Schema_Atomic | Size: 0x18
-			char m_Outputs[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<pulse_runtime_lib::CPulse_OutflowConnection> m_Outputs; // 0x48 | Schema_Atomic | Size: 0x18
+			// char m_Outputs[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 		};
 #ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::pulse_runtime_lib::CPulseCell_Outflow_CycleShuffled, m_Outputs) == 0x48, "m_Outputs in CPulseCell_Outflow_CycleShuffled should be at offset 0x48");

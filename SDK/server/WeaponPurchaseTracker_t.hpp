@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -22,7 +22,7 @@ namespace CS2 {
 		class WeaponPurchaseTracker_t  {
 		public:
 			S2_PAD(0x8);
-			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::WeaponPurchaseCount_t> m_weaponPurchases; // 0x8 | Schema_Atomic | Size: 0x68
+			// server::CUtlVectorEmbeddedNetworkVar<server::WeaponPurchaseCount_t> m_weaponPurchases; // 0x8 | Schema_Atomic | Size: 0x68
 			char m_weaponPurchases[0x68]; // 0x8 | Schema_Atomic | Size: 0x68
 		};
 #ifdef USE_STATIC_ASSERTS

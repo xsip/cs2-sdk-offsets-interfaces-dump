@@ -12,5 +12,5 @@ export const soundsystem_lowlevel_VMixDynamics3BandDesc_t  = {
 	m_flLowCutoffFreq: 24n, // float32 m_flLowCutoffFreq; |  0x18 | Schema_Builtin | Size: 0x4
 	m_flHighCutoffFreq: 28n, // float32 m_flHighCutoffFreq; |  0x1c | Schema_Builtin | Size: 0x4
 	m_bPeakMode: 32n, // bool m_bPeakMode; |  0x20 | Schema_Builtin | Size: 0x1
-	m_bandDesc: 36n, // GlobalTypes::VMixDynamicsBand_t[3]  | Schema_FixedArray | Size: 0x144
+	m_bandDesc: 36n, // GlobalTypes::VMixDynamicsBand_t[3]  | Schema_FixedArray | Size: 0x6c
 }

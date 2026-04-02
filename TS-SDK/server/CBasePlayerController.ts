@@ -11,7 +11,7 @@ export const server_CBasePlayerController  = {
 	m_bKnownTeamMismatch: 1252n, // bool m_bKnownTeamMismatch; |  0x4e4 | Schema_Builtin | Size: 0x1
 	m_nSplitScreenSlot: 1256n, // GlobalTypes::CSplitScreenSlot  | Schema_Atomic | Size: 0x4
 	m_hSplitOwner: 1260n, // GlobalTypes::CHandle<server::CBasePlayerController>  | Schema_Atomic | Size: 0x4
-	m_hSplitScreenPlayers: 1264n, // server::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerController>>  | Schema_Atomic | Size: 0x18
+	m_hSplitScreenPlayers: 1264n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBasePlayerController>>  | Schema_Atomic | Size: 0x18
 	m_bIsHLTV: 1288n, // bool m_bIsHLTV; |  0x508 | Schema_Builtin | Size: 0x1
 	m_iConnected: 1292n, // client::PlayerConnectedState  | Schema_DeclaredEnum | Size: 0x4
 	m_iszPlayerName: 1296n, // char m_iszPlayerName[128]; |  0x510 | Schema_FixedArray | Size: 0x80

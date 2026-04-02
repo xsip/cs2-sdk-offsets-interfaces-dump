@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -23,8 +23,8 @@ namespace CS2 {
 	namespace pulse_runtime_lib {
 		class CPulseCell_Timeline : public CS2::pulse_runtime_lib::CPulseCell_BaseYieldingInflow {
 		public:
-			// GlobalTypes::CUtlVector<pulse_runtime_lib::CPulseCell_Timeline_TimelineEvent_t> m_TimelineEvents; // 0x48 | Schema_Atomic | Size: 0x18
-			char m_TimelineEvents[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<pulse_runtime_lib::CPulseCell_Timeline_TimelineEvent_t> m_TimelineEvents; // 0x48 | Schema_Atomic | Size: 0x18
+			// char m_TimelineEvents[0x18]; // 0x48 | Schema_Atomic | Size: 0x18
 			bool m_bWaitForChildOutflows; // 0x60 | Schema_Builtin | Size: 0x1
 			S2_PAD(0x7);
 			pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0x68 | Schema_DeclaredClass | Size: 0x48

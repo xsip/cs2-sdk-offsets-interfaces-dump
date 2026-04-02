@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -50,7 +50,7 @@ namespace CS2 {
 			server::CPlayer_CameraServices* m_pCameraServices; // 0xba8 | Schema_Ptr | Size: 0x8
 			server::CPlayer_MovementServices* m_pMovementServices; // 0xbb0 | Schema_Ptr | Size: 0x8
 			S2_PAD(0x8);
-			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::ViewAngleServerChange_t> m_ServerViewAngleChanges; // 0xbc0 | Schema_Atomic | Size: 0x68
+			// server::CUtlVectorEmbeddedNetworkVar<server::ViewAngleServerChange_t> m_ServerViewAngleChanges; // 0xbc0 | Schema_Atomic | Size: 0x68
 			char m_ServerViewAngleChanges[0x68]; // 0xbc0 | Schema_Atomic | Size: 0x68
 			GlobalTypes::QAngle v_angle; // 0xc28 | Schema_Atomic | Size: 0xc
 			GlobalTypes::QAngle v_anglePrevious; // 0xc34 | Schema_Atomic | Size: 0xc

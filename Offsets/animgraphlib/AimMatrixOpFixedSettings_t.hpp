@@ -12,7 +12,7 @@ namespace CS2 {
 			namespace AimMatrixOpFixedSettings_t /**/ {
 				constexpr std::ptrdiff_t m_attachment = 0x0; // modellib::CAnimAttachment  | Schema_DeclaredClass | Size: 0x80
 				constexpr std::ptrdiff_t m_damping = 0x80; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_poseCacheHandles = 0x98; // GlobalTypes::CPoseHandle[10]  | Schema_FixedArray | Size: 0x190
+				constexpr std::ptrdiff_t m_poseCacheHandles = 0x98; // GlobalTypes::CPoseHandle[10]  | Schema_FixedArray | Size: 0x28
 				constexpr std::ptrdiff_t m_eBlendMode = 0xc0; // animgraphlib::AimMatrixBlendMode  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxYawAngle = 0xc4; // float32 m_flMaxYawAngle; |  0xc4 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_flMaxPitchAngle = 0xc8; // float32 m_flMaxPitchAngle; |  0xc8 | Schema_Builtin | Size: 0x4

@@ -23,7 +23,7 @@ export const client_C_BarnLight  = {
 	m_QueuedLightStyleStrings: 3792n, // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 	m_LightStyleEvents: 3816n, // GlobalTypes::C_NetworkUtlVectorBase<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 	m_LightStyleTargets: 3840n, // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseModelEntity>>  | Schema_Atomic | Size: 0x18
-	m_StyleEvent: 3864n, // GlobalTypes::CEntityIOOutput[4]  | Schema_FixedArray | Size: 0x180
+	m_StyleEvent: 3864n, // GlobalTypes::CEntityIOOutput[4]  | Schema_FixedArray | Size: 0x60
 	m_hLightCookie: 3960n, // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
 	m_flShape: 3968n, // float32 m_flShape; |  0xf80 | Schema_Builtin | Size: 0x4
 	m_flSoftX: 3972n, // float32 m_flSoftX; |  0xf84 | Schema_Builtin | Size: 0x4

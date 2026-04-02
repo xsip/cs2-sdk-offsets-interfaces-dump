@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -25,8 +25,8 @@ namespace CS2 {
 			client::filter_t m_nFilterType; // 0x4e0 | Schema_DeclaredEnum | Size: 0x4
 			S2_PAD(0x4);
 			GlobalTypes::CUtlSymbolLarge m_iFilterName[10]; // 0x4e8 | Schema_FixedArray | Size: 0x50
-			// server::CHandle< CBaseEntity > m_hFilter[10]; // 0x538 | Schema_FixedArray | Size: 0x28
-			char m_hFilter[0x28]; // 0x538 | Schema_FixedArray | Size: 0x4
+			GlobalTypes::CHandle< CBaseEntity > m_hFilter[10]; // 0x538 | Schema_FixedArray | Size: 0x28
+			// char m_hFilter[0x28]; // 0x538 | Schema_FixedArray | Size: 0x4
 		};
 #ifdef USE_STATIC_ASSERTS
 		static_assert(offsetof(CS2::server::CFilterMultiple, m_nFilterType) == 0x4E0, "m_nFilterType in CFilterMultiple should be at offset 0x4E0");

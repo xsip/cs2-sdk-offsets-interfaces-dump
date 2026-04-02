@@ -11,9 +11,9 @@ export const animlib_CNmGraphDefinition  = {
 	m_controlParameterIDs: 56n, // GlobalTypes::CUtlVector<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x18
 	m_virtualParameterIDs: 80n, // GlobalTypes::CUtlVector<GlobalTypes::CGlobalSymbol>  | Schema_Atomic | Size: 0x18
 	m_virtualParameterNodeIndices: 104n, // GlobalTypes::CUtlVector  | Schema_Atomic | Size: 0x18
-	m_referencedGraphSlots: 128n, // GlobalTypes::CUtlVector<animlib::ReferencedGraphSlot_t>  | Schema_Atomic | Size: 0x18
-	m_externalGraphSlots: 152n, // GlobalTypes::CUtlVector<animlib::ExternalGraphSlot_t>  | Schema_Atomic | Size: 0x18
-	m_externalPoseSlots: 176n, // GlobalTypes::CUtlVector<animlib::ExternalPoseSlot_t>  | Schema_Atomic | Size: 0x18
+	m_referencedGraphSlots: 128n, // GlobalTypes::CUtlVector<animlib::CNmGraphDefinition_ReferencedGraphSlot_t>  | Schema_Atomic | Size: 0x18
+	m_externalGraphSlots: 152n, // GlobalTypes::CUtlVector<animlib::CNmGraphDefinition_ExternalGraphSlot_t>  | Schema_Atomic | Size: 0x18
+	m_externalPoseSlots: 176n, // GlobalTypes::CUtlVector<animlib::CNmGraphDefinition_ExternalPoseSlot_t>  | Schema_Atomic | Size: 0x18
 	m_nodePaths: 312n, // GlobalTypes::CUtlVector<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 	m_resources: 336n, // GlobalTypes::CUtlVector<GlobalTypes::CStrongHandleVoid>  | Schema_Atomic | Size: 0x18
 }

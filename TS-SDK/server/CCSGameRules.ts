@@ -67,7 +67,7 @@ export const server_CCSGameRules  = {
 	m_iMatchStats_PlayersAlive_CT: 2760n, // int32_t m_iMatchStats_PlayersAlive_CT[30]; |  0xac8 | Schema_FixedArray | Size: 0x78
 	m_iMatchStats_PlayersAlive_T: 2880n, // int32_t m_iMatchStats_PlayersAlive_T[30]; |  0xb40 | Schema_FixedArray | Size: 0x78
 	m_TeamRespawnWaveTimes: 3000n, // float32 m_TeamRespawnWaveTimes[32]; |  0xbb8 | Schema_FixedArray | Size: 0x80
-	m_flNextRespawnWave: 3128n, // GlobalTypes::GameTime_t[32]  | Schema_FixedArray | Size: 0x1000
+	m_flNextRespawnWave: 3128n, // GlobalTypes::GameTime_t[32]  | Schema_FixedArray | Size: 0x80
 	m_vMinimapMins: 3256n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 	m_vMinimapMaxs: 3268n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 	m_MinimapVerticalSectionHeights: 3280n, // float32 m_MinimapVerticalSectionHeights[8]; |  0xcd0 | Schema_FixedArray | Size: 0x20
@@ -144,15 +144,15 @@ export const server_CCSGameRules  = {
 	m_bBombDefused: 3841n, // bool m_bBombDefused; |  0xf01 | Schema_Builtin | Size: 0x1
 	m_bMapHasBombZone: 3842n, // bool m_bMapHasBombZone; |  0xf02 | Schema_Builtin | Size: 0x1
 	m_vecMainCTSpawnPos: 3920n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-	m_CTSpawnPointsMasterList: 3936n, // server::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>>  | Schema_Atomic | Size: 0x18
-	m_TerroristSpawnPointsMasterList: 3960n, // server::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>>  | Schema_Atomic | Size: 0x18
+	m_CTSpawnPointsMasterList: 3936n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>>  | Schema_Atomic | Size: 0x18
+	m_TerroristSpawnPointsMasterList: 3960n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>>  | Schema_Atomic | Size: 0x18
 	m_bRespawningAllRespawnablePlayers: 3984n, // bool m_bRespawningAllRespawnablePlayers; |  0xf90 | Schema_Builtin | Size: 0x1
 	m_iNextCTSpawnPoint: 3988n, // int32_t m_iNextCTSpawnPoint; |  0xf94 | Schema_Builtin | Size: 0x4
 	m_flCTSpawnPointUsedTime: 3992n, // float32 m_flCTSpawnPointUsedTime; |  0xf98 | Schema_Builtin | Size: 0x4
 	m_iNextTerroristSpawnPoint: 3996n, // int32_t m_iNextTerroristSpawnPoint; |  0xf9c | Schema_Builtin | Size: 0x4
 	m_flTerroristSpawnPointUsedTime: 4000n, // float32 m_flTerroristSpawnPointUsedTime; |  0xfa0 | Schema_Builtin | Size: 0x4
-	m_CTSpawnPoints: 4008n, // server::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>>  | Schema_Atomic | Size: 0x18
-	m_TerroristSpawnPoints: 4032n, // server::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>>  | Schema_Atomic | Size: 0x18
+	m_CTSpawnPoints: 4008n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>>  | Schema_Atomic | Size: 0x18
+	m_TerroristSpawnPoints: 4032n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::SpawnPoint>>  | Schema_Atomic | Size: 0x18
 	m_bIsUnreservedGameServer: 4056n, // bool m_bIsUnreservedGameServer; |  0xfd8 | Schema_Builtin | Size: 0x1
 	m_fAutobalanceDisplayTime: 4060n, // float32 m_fAutobalanceDisplayTime; |  0xfdc | Schema_Builtin | Size: 0x4
 	m_bAllowWeaponSwitch: 4120n, // bool m_bAllowWeaponSwitch; |  0x1018 | Schema_Builtin | Size: 0x1

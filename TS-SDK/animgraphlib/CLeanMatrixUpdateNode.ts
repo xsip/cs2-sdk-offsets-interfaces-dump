@@ -5,8 +5,8 @@ import {animgraphlib_CLeafUpdateNode} from './CLeafUpdateNode';
 // BaseClass: : public CS2::animgraphlib::CLeafUpdateNode
 export const animgraphlib_CLeanMatrixUpdateNode  = {
 	...animgraphlib_CLeafUpdateNode,
-	m_frameCorners: 92n, // int32_t m_frameCorners[3]; |  0x5c | Schema_FixedArray | Size: 0x0
-	m_poses: 128n, // GlobalTypes::CPoseHandle[9]  | Schema_FixedArray | Size: 0x144
+	m_frameCorners: 92n, // int32_t m_frameCorners[3][3]; |  0x5c | Schema_FixedArray | Size: 0x24
+	m_poses: 128n, // GlobalTypes::CPoseHandle[9]  | Schema_FixedArray | Size: 0x24
 	m_damping: 168n, // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
 	m_blendSource: 192n, // animgraphlib::AnimVectorSource  | Schema_DeclaredEnum | Size: 0x4
 	m_paramIndex: 196n, // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2

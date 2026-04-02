@@ -123,7 +123,7 @@ export const client_C_CSPlayerPawn  = {
 	m_pClippingWeapon: 15808n, // client::C_CSWeaponBase**  | Schema_Ptr | Size: 0x8
 	m_nPlayerInfernoBodyFx: 15816n, // client::ParticleIndex_t  | Schema_DeclaredClass | Size: 0x4
 	m_angEyeAngles: 15824n, // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-	m_arrOldEyeAnglesTimes: 15968n, // GlobalTypes::GameTime_t[4]  | Schema_FixedArray | Size: 0x40
+	m_arrOldEyeAnglesTimes: 15968n, // GlobalTypes::GameTime_t[4]  | Schema_FixedArray | Size: 0x10
 	m_arrOldEyeAngles: 15984n, // GlobalTypes::QAngle[4]  | Schema_FixedArray | Size: 0x30
 	m_angEyeAnglesVelocity: 16032n, // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 	m_iIDEntIndex: 16044n, // GlobalTypes::CEntityIndex  | Schema_Atomic | Size: 0x4

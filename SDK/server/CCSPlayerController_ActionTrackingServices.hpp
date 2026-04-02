@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -23,7 +23,7 @@ namespace CS2 {
 	namespace server {
 		class CCSPlayerController_ActionTrackingServices : public CS2::client::CPlayerControllerComponent {
 		public:
-			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::CSPerRoundStats_t> m_perRoundStats; // 0x40 | Schema_Atomic | Size: 0x88
+			// server::CUtlVectorEmbeddedNetworkVar<server::CSPerRoundStats_t> m_perRoundStats; // 0x40 | Schema_Atomic | Size: 0x88
 			char m_perRoundStats[0x88]; // 0x40 | Schema_Atomic | Size: 0x88
 			server::CSMatchStats_t m_matchStats; // 0xc8 | Schema_DeclaredClass | Size: 0xc0
 			int32_t m_iNumRoundKills; // 0x188 | Schema_Builtin | Size: 0x4

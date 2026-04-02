@@ -8,6 +8,6 @@ export const modellib_CSceneObjectData  = {
 	m_drawCalls: 24n, // GlobalTypes::CUtlLeanVector<modellib::CMaterialDrawDescriptor>  | Schema_Atomic | Size: 0x10
 	m_drawBounds: 40n, // GlobalTypes::CUtlLeanVector<mathlib_extended::AABB_t>  | Schema_Atomic | Size: 0x10
 	m_meshlets: 56n, // GlobalTypes::CUtlLeanVector<modellib::CMeshletDescriptor>  | Schema_Atomic | Size: 0x10
-	m_rtProxyDrawCalls: 72n, // GlobalTypes::CUtlLeanVector<modellib::RTProxyDrawDescriptor_t>  | Schema_Atomic | Size: 0x10
+	m_rtProxyDrawCalls: 72n, // GlobalTypes::CUtlLeanVector<modellib::CSceneObjectData_RTProxyDrawDescriptor_t>  | Schema_Atomic | Size: 0x10
 	m_vTintColor: 88n, // GlobalTypes::Vector4D  | Schema_Atomic | Size: 0x10
 }

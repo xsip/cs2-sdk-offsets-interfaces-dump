@@ -6,17 +6,18 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
+#include "MorphBundleType_t.hpp"
 #include "CMorphData.hpp"
 #include "CFlexDesc.hpp"
 #include "CFlexController.hpp"
 #include "CFlexRule.hpp"
 
 
-#include "MorphBundleType_t.hpp"
+
 
 
 using namespace GlobalTypes;
@@ -27,7 +28,7 @@ namespace CS2 {
 			S2_PAD(0x10);
 			int32_t m_nWidth; // 0x10 | Schema_Builtin | Size: 0x4
 			int32_t m_nHeight; // 0x14 | Schema_Builtin | Size: 0x4
-			GlobalTypes::CUtlVector< MorphBundleType_t > m_bundleTypes; // 0x18 | Schema_Atomic | Size: 0x18
+			GlobalTypes::CUtlVector<modellib::MorphBundleType_t> m_bundleTypes; // 0x18 | Schema_Atomic | Size: 0x18
 			// char m_bundleTypes[0x18]; // 0x18 | Schema_Atomic | Size: 0x18
 			GlobalTypes::CUtlVector<modellib::CMorphData> m_morphDatas; // 0x30 | Schema_Atomic | Size: 0x18
 			// char m_morphDatas[0x18]; // 0x30 | Schema_Atomic | Size: 0x18

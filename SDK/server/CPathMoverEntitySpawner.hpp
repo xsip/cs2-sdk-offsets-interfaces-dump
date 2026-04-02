@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -33,7 +33,7 @@ namespace CS2 {
 			// char m_hPathMover[0x4]; // 0x4cc | Schema_Atomic | Size: 0x4
 			float32 m_flSpawnFrequencySeconds; // 0x4d0 | Schema_Builtin | Size: 0x4
 			float32 m_flSpawnFrequencyDistToNearestMover; // 0x4d4 | Schema_Builtin | Size: 0x4
-			// server::CUtlHashtable< CHandle< CFuncMover >, CPathMoverEntitySpawn > m_mapSpawnedMoverTemplates; // 0x4d8 | Schema_Atomic | Size: 0x20
+			// GlobalTypes::CUtlHashtable< CHandle< CFuncMover >, CPathMoverEntitySpawn > m_mapSpawnedMoverTemplates; // 0x4d8 | Schema_Atomic | Size: 0x20
 			char m_mapSpawnedMoverTemplates[0x20]; // 0x4d8 | Schema_Atomic | Size: 0x20
 			int32_t m_nMaxActive; // 0x4f8 | Schema_Builtin | Size: 0x4
 			entity2::GameTime_t m_flLastSpawnTime; // 0x4fc | Schema_DeclaredClass | Size: 0x4

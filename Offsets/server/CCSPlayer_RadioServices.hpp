@@ -13,7 +13,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_flGotHostageTalkTimer = 0x48; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flDefusingTalkTimer = 0x4c; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_flC4PlantTalkTimer = 0x50; // entity2::GameTime_t  | Schema_DeclaredClass | Size: 0x4
-				constexpr std::ptrdiff_t m_flRadioTokenSlots = 0x54; // GlobalTypes::GameTime_t[3]  | Schema_FixedArray | Size: 0x24
+				constexpr std::ptrdiff_t m_flRadioTokenSlots = 0x54; // GlobalTypes::GameTime_t[3]  | Schema_FixedArray | Size: 0xc
 				constexpr std::ptrdiff_t m_bIgnoreRadio = 0x60; // bool m_bIgnoreRadio; |  0x60 | Schema_Builtin | Size: 0x1
 			}
 		}

@@ -77,7 +77,7 @@ export const server_CScriptedSequence  = {
 	m_OnPostIdleEndSequence: 1456n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 	m_OnCancelSequence: 1480n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 	m_OnCancelFailedSequence: 1504n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
-	m_OnScriptEvent: 1528n, // GlobalTypes::CEntityIOOutput[8]  | Schema_FixedArray | Size: 0x600
+	m_OnScriptEvent: 1528n, // GlobalTypes::CEntityIOOutput[8]  | Schema_FixedArray | Size: 0xc0
 	m_matOtherToMain: 1728n, // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 	m_hInteractionMainEntity: 1760n, // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 	m_iPlayerDeathBehavior: 1764n, // int32_t m_iPlayerDeathBehavior; |  0x6e4 | Schema_Builtin | Size: 0x4

@@ -16,5 +16,5 @@ export const server_CPlayer_CameraServices  = {
 	m_PostProcessingVolumes: 296n, // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CPostProcessingVolume>>  | Schema_Atomic | Size: 0x18
 	m_flOldPlayerZ: 320n, // float32 m_flOldPlayerZ; |  0x140 | Schema_Builtin | Size: 0x4
 	m_flOldPlayerViewOffsetZ: 324n, // float32 m_flOldPlayerViewOffsetZ; |  0x144 | Schema_Builtin | Size: 0x4
-	m_hTriggerSoundscapeList: 352n, // server::CUtlVector<GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable>>  | Schema_Atomic | Size: 0x18
+	m_hTriggerSoundscapeList: 352n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CEnvSoundscapeTriggerable>>  | Schema_Atomic | Size: 0x18
 }

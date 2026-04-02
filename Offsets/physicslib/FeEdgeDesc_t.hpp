@@ -11,7 +11,7 @@ namespace CS2 {
 			// Class size: 0x10
 			namespace FeEdgeDesc_t /**/ {
 				constexpr std::ptrdiff_t nEdge = 0x0; // uint16_t nEdge[2]; |  0x0 | Schema_FixedArray | Size: 0x4
-				constexpr std::ptrdiff_t nSide = 0x4; // uint16_t nSide[2]; |  0x4 | Schema_FixedArray | Size: 0x0
+				constexpr std::ptrdiff_t nSide = 0x4; // uint16_t nSide[2][2]; |  0x4 | Schema_FixedArray | Size: 0x8
 				constexpr std::ptrdiff_t nVirtElem = 0xc; // uint16_t nVirtElem[2]; |  0xc | Schema_FixedArray | Size: 0x4
 			}
 		}

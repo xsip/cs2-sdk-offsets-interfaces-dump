@@ -11,7 +11,7 @@ export const modellib_CMaterialDrawDescriptor  = {
 	m_nAppliedIndexOffset: 32n, // uint32_t m_nAppliedIndexOffset; |  0x20 | Schema_Builtin | Size: 0x4
 	m_nDepthVertexBufferIndex: 36n, // uint8_t m_nDepthVertexBufferIndex; |  0x24 | Schema_Builtin | Size: 0x1
 	m_nMeshletPackedIVBIndex: 37n, // uint8_t m_nMeshletPackedIVBIndex; |  0x25 | Schema_Builtin | Size: 0x1
-	m_rigidMeshParts: 40n, // GlobalTypes::CUtlLeanVector<modellib::RigidMeshPart_t>  | Schema_Atomic | Size: 0x10
+	m_rigidMeshParts: 40n, // GlobalTypes::CUtlLeanVector<modellib::CMaterialDrawDescriptor_RigidMeshPart_t>  | Schema_Atomic | Size: 0x10
 	m_nPrimitiveType: 56n, // modellib::RenderPrimitiveType_t  | Schema_DeclaredEnum | Size: 0x4
 	m_nBaseVertex: 60n, // int32_t m_nBaseVertex; |  0x3c | Schema_Builtin | Size: 0x4
 	m_nVertexCount: 64n, // int32_t m_nVertexCount; |  0x40 | Schema_Builtin | Size: 0x4

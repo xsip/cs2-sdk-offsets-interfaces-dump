@@ -12,5 +12,5 @@ export const server_CCommentarySystem  = {
 	m_hCurrentNode: 56n, // GlobalTypes::CHandle<server::CPointCommentaryNode>  | Schema_Atomic | Size: 0x4
 	m_hActiveCommentaryNode: 60n, // GlobalTypes::CHandle<server::CPointCommentaryNode>  | Schema_Atomic | Size: 0x4
 	m_hLastCommentaryNode: 64n, // GlobalTypes::CHandle<server::CPointCommentaryNode>  | Schema_Atomic | Size: 0x4
-	m_vecNodes: 72n, // server::CUtlVector<GlobalTypes::CHandle<server::CPointCommentaryNode>>  | Schema_Atomic | Size: 0x18
+	m_vecNodes: 72n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CPointCommentaryNode>>  | Schema_Atomic | Size: 0x18
 }

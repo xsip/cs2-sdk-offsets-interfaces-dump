@@ -23,7 +23,7 @@ export const server_CBarnLight  = {
 	m_QueuedLightStyleStrings: 1912n, // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 	m_LightStyleEvents: 1936n, // GlobalTypes::CNetworkUtlVectorBase<GlobalTypes::CUtlString>  | Schema_Atomic | Size: 0x18
 	m_LightStyleTargets: 1960n, // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseModelEntity>>  | Schema_Atomic | Size: 0x18
-	m_StyleEvent: 1984n, // GlobalTypes::CEntityIOOutput[4]  | Schema_FixedArray | Size: 0x180
+	m_StyleEvent: 1984n, // GlobalTypes::CEntityIOOutput[4]  | Schema_FixedArray | Size: 0x60
 	m_hLightCookie: 2112n, // GlobalTypes::CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase>  | Schema_Atomic | Size: 0x8
 	m_flShape: 2120n, // float32 m_flShape; |  0x848 | Schema_Builtin | Size: 0x4
 	m_flSoftX: 2124n, // float32 m_flSoftX; |  0x84c | Schema_Builtin | Size: 0x4

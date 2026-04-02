@@ -15,6 +15,6 @@ export const client_C_SceneEntity  = {
 	m_hOwner: 1564n, // GlobalTypes::CHandle<client::C_BaseFlex>  | Schema_Atomic | Size: 0x4
 	m_hActorList: 1568n, // client::C_NetworkUtlVectorBase<GlobalTypes::CHandle<client::C_BaseFlex>>  | Schema_Atomic | Size: 0x18
 	m_bWasPlaying: 1592n, // bool m_bWasPlaying; |  0x638 | Schema_Builtin | Size: 0x1
-	m_QueuedEvents: 1608n, // GlobalTypes::CUtlVector<client::QueuedEvents_t>  | Schema_Atomic | Size: 0x18
+	m_QueuedEvents: 1608n, // GlobalTypes::CUtlVector<client::C_SceneEntity_QueuedEvents_t>  | Schema_Atomic | Size: 0x18
 	m_flCurrentTime: 1632n, // float32 m_flCurrentTime; |  0x660 | Schema_Builtin | Size: 0x4
 }

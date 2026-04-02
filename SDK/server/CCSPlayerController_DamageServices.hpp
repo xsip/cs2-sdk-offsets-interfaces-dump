@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -24,7 +24,7 @@ namespace CS2 {
 		public:
 			int32_t m_nSendUpdate; // 0x40 | Schema_Builtin | Size: 0x4
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::CDamageRecord> m_DamageList; // 0x48 | Schema_Atomic | Size: 0x88
+			// server::CUtlVectorEmbeddedNetworkVar<server::CDamageRecord> m_DamageList; // 0x48 | Schema_Atomic | Size: 0x88
 			char m_DamageList[0x88]; // 0x48 | Schema_Atomic | Size: 0x88
 		};
 #ifdef USE_STATIC_ASSERTS

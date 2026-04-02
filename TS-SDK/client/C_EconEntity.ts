@@ -24,5 +24,5 @@ export const client_C_EconEntity  = {
 	m_nUnloadedModelIndex: 6284n, // int32_t m_nUnloadedModelIndex; |  0x188c | Schema_Builtin | Size: 0x4
 	m_iNumOwnerValidationRetries: 6288n, // int32_t m_iNumOwnerValidationRetries; |  0x1890 | Schema_Builtin | Size: 0x4
 	m_hOldProvidee: 6304n, // GlobalTypes::CHandle<client::C_BaseEntity>  | Schema_Atomic | Size: 0x4
-	m_vecAttachedModels: 6312n, // GlobalTypes::CUtlVector<client::AttachedModelData_t>  | Schema_Atomic | Size: 0x18
+	m_vecAttachedModels: 6312n, // GlobalTypes::CUtlVector<client::C_EconEntity_AttachedModelData_t>  | Schema_Atomic | Size: 0x18
 }

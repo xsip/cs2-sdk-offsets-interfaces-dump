@@ -28,5 +28,5 @@ export const server_CFish  = {
 	m_panicTimer: 2760n, // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
 	m_disperseTimer: 2784n, // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
 	m_proximityTimer: 2808n, // server::CountdownTimer  | Schema_DeclaredClass | Size: 0x18
-	m_visible: 2832n, // server::CUtlVector<server::CFish*>  | Schema_Atomic | Size: 0x18
+	m_visible: 2832n, // GlobalTypes::CUtlVector<server::CFish*>  | Schema_Atomic | Size: 0x18
 }

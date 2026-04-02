@@ -6,10 +6,11 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
+#include "../resourcesystem/InfoForResourceTypeCCompositeMaterialKit.hpp"
 #include "CompositeMaterialMatchFilter_t.hpp"
 #include "CompositeMaterialInputContainer_t.hpp"
 #include "CompMatPropertyMutator_t.hpp"

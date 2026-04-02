@@ -16,5 +16,5 @@ export const client_C_BaseFlex  = {
 	m_nEyeOcclusionRendererBone: 4768n, // int32_t m_nEyeOcclusionRendererBone; |  0x12a0 | Schema_Builtin | Size: 0x4
 	m_mEyeOcclusionRendererCameraToBoneTransform: 4772n, // GlobalTypes::matrix3x4_t  | Schema_Atomic | Size: 0x30
 	m_vEyeOcclusionRendererHalfExtent: 4820n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-	m_PhonemeClasses: 4848n, // client::C_BaseFlex::Emphasized_Phoneme[3]  | Schema_FixedArray | Size: 0x120
+	m_PhonemeClasses: 4848n, // client::C_BaseFlex::Emphasized_Phoneme[3]  | Schema_FixedArray | Size: 0x60
 }

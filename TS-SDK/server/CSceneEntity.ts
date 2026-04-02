@@ -45,7 +45,7 @@ export const server_CSceneEntity  = {
 	m_bBreakOnNonIdle: 1361n, // bool m_bBreakOnNonIdle; |  0x551 | Schema_Builtin | Size: 0x1
 	m_bSceneFinished: 1362n, // bool m_bSceneFinished; |  0x552 | Schema_Builtin | Size: 0x1
 	m_hActorList: 1368n, // server::CNetworkUtlVectorBase<GlobalTypes::CHandle<server::CBaseFlex>>  | Schema_Atomic | Size: 0x18
-	m_hRemoveActorList: 1392n, // server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
+	m_hRemoveActorList: 1392n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
 	m_nSceneStringIndex: 1464n, // uint16_t m_nSceneStringIndex; |  0x5b8 | Schema_Builtin | Size: 0x2
 	m_OnStart: 1472n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 	m_OnCompletion: 1496n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
@@ -59,8 +59,8 @@ export const server_CSceneEntity  = {
 	m_bCompletedEarly: 1746n, // bool m_bCompletedEarly; |  0x6d2 | Schema_Builtin | Size: 0x1
 	m_bInterruptSceneFinished: 1747n, // bool m_bInterruptSceneFinished; |  0x6d3 | Schema_Builtin | Size: 0x1
 	m_bRestoring: 1748n, // bool m_bRestoring; |  0x6d4 | Schema_Builtin | Size: 0x1
-	m_hNotifySceneCompletion: 1752n, // server::CUtlVector<GlobalTypes::CHandle<server::CSceneEntity>>  | Schema_Atomic | Size: 0x18
-	m_hListManagers: 1776n, // server::CUtlVector<GlobalTypes::CHandle<server::CSceneListManager>>  | Schema_Atomic | Size: 0x18
+	m_hNotifySceneCompletion: 1752n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CSceneEntity>>  | Schema_Atomic | Size: 0x18
+	m_hListManagers: 1776n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CSceneListManager>>  | Schema_Atomic | Size: 0x18
 	m_iszSoundName: 1800n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 	m_iszSequenceName: 1808n, // GlobalTypes::CUtlSymbolLarge  | Schema_Atomic | Size: 0x8
 	m_hActor: 1816n, // GlobalTypes::CHandle<server::CBaseFlex>  | Schema_Atomic | Size: 0x4

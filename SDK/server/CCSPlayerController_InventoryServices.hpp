@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -35,7 +35,7 @@ namespace CS2 {
 			uint32_t m_unEquippedPlayerSprayIDs[1]; // 0xf48 | Schema_FixedArray | Size: 0x4
 			S2_PAD(0x4);
 			uint64_t m_unCurrentLoadoutHash; // 0xf50 | Schema_Builtin | Size: 0x8
-			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::ServerAuthoritativeWeaponSlot_t> m_vecServerAuthoritativeWeaponSlots; // 0xf58 | Schema_Atomic | Size: 0x88
+			// server::CUtlVectorEmbeddedNetworkVar<server::ServerAuthoritativeWeaponSlot_t> m_vecServerAuthoritativeWeaponSlots; // 0xf58 | Schema_Atomic | Size: 0x88
 			char m_vecServerAuthoritativeWeaponSlots[0x88]; // 0xf58 | Schema_Atomic | Size: 0x88
 		};
 #ifdef USE_STATIC_ASSERTS

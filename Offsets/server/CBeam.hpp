@@ -20,7 +20,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nBeamType = 0x758; // client::BeamType_t  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_nBeamFlags = 0x75c; // uint32_t m_nBeamFlags; |  0x75c | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_hAttachEntity = 0x760; // GlobalTypes::CHandle  | Schema_FixedArray | Size: 0x28
-				constexpr std::ptrdiff_t m_nAttachIndex = 0x788; // GlobalTypes::AttachmentHandle_t[10]  | Schema_FixedArray | Size: 0x64
+				constexpr std::ptrdiff_t m_nAttachIndex = 0x788; // GlobalTypes::AttachmentHandle_t[10]  | Schema_FixedArray | Size: 0xa
 				constexpr std::ptrdiff_t m_fWidth = 0x794; // float32 m_fWidth; |  0x794 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_fEndWidth = 0x798; // float32 m_fEndWidth; |  0x798 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_fFadeLength = 0x79c; // float32 m_fFadeLength; |  0x79c | Schema_Builtin | Size: 0x4

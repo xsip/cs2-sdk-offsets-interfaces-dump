@@ -82,7 +82,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_OnPostIdleEndSequence = 0x5b0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_OnCancelSequence = 0x5c8; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_OnCancelFailedSequence = 0x5e0; // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
-				constexpr std::ptrdiff_t m_OnScriptEvent = 0x5f8; // GlobalTypes::CEntityIOOutput[8]  | Schema_FixedArray | Size: 0x600
+				constexpr std::ptrdiff_t m_OnScriptEvent = 0x5f8; // GlobalTypes::CEntityIOOutput[8]  | Schema_FixedArray | Size: 0xc0
 				constexpr std::ptrdiff_t m_matOtherToMain = 0x6c0; // GlobalTypes::CTransform  | Schema_Atomic | Size: 0x20
 				constexpr std::ptrdiff_t m_hInteractionMainEntity = 0x6e0; // GlobalTypes::CHandle<server::CBaseEntity>  | Schema_Atomic | Size: 0x4
 				constexpr std::ptrdiff_t m_iPlayerDeathBehavior = 0x6e4; // int32_t m_iPlayerDeathBehavior; |  0x6e4 | Schema_Builtin | Size: 0x4

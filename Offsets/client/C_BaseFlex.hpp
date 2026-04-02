@@ -21,7 +21,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_nEyeOcclusionRendererBone = 0x12a0; // int32_t m_nEyeOcclusionRendererBone; |  0x12a0 | Schema_Builtin | Size: 0x4
 				constexpr std::ptrdiff_t m_mEyeOcclusionRendererCameraToBoneTransform = 0x12a4; // GlobalTypes::matrix3x4_t  | Schema_Atomic | Size: 0x30
 				constexpr std::ptrdiff_t m_vEyeOcclusionRendererHalfExtent = 0x12d4; // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_PhonemeClasses = 0x12f0; // client::C_BaseFlex::Emphasized_Phoneme[3]  | Schema_FixedArray | Size: 0x120
+				constexpr std::ptrdiff_t m_PhonemeClasses = 0x12f0; // client::C_BaseFlex::Emphasized_Phoneme[3]  | Schema_FixedArray | Size: 0x60
 			}
 		}
 	}

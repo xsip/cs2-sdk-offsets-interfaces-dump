@@ -6,7 +6,7 @@ import {server_CBaseModelEntity} from './CBaseModelEntity';
 export const server_CFuncLadder  = {
 	...server_CBaseModelEntity,
 	m_vecLadderDir: 1840n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
-	m_Dismounts: 1856n, // server::CUtlVector<GlobalTypes::CHandle<server::CInfoLadderDismount>>  | Schema_Atomic | Size: 0x18
+	m_Dismounts: 1856n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CInfoLadderDismount>>  | Schema_Atomic | Size: 0x18
 	m_vecLocalTop: 1880n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 	m_vecPlayerMountPositionTop: 1892n, // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc
 	m_vecPlayerMountPositionBottom: 1904n, // GlobalTypes::VectorWS  | Schema_Atomic | Size: 0xc

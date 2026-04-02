@@ -67,7 +67,7 @@ export const client_C_CSGameRules  = {
 	m_iMatchStats_PlayersAlive_CT: 2608n, // int32_t m_iMatchStats_PlayersAlive_CT[30]; |  0xa30 | Schema_FixedArray | Size: 0x78
 	m_iMatchStats_PlayersAlive_T: 2728n, // int32_t m_iMatchStats_PlayersAlive_T[30]; |  0xaa8 | Schema_FixedArray | Size: 0x78
 	m_TeamRespawnWaveTimes: 2848n, // float32 m_TeamRespawnWaveTimes[32]; |  0xb20 | Schema_FixedArray | Size: 0x80
-	m_flNextRespawnWave: 2976n, // GlobalTypes::GameTime_t[32]  | Schema_FixedArray | Size: 0x1000
+	m_flNextRespawnWave: 2976n, // GlobalTypes::GameTime_t[32]  | Schema_FixedArray | Size: 0x80
 	m_vMinimapMins: 3104n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 	m_vMinimapMaxs: 3116n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 	m_MinimapVerticalSectionHeights: 3128n, // float32 m_MinimapVerticalSectionHeights[8]; |  0xc38 | Schema_FixedArray | Size: 0x20

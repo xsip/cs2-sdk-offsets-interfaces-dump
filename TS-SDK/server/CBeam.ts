@@ -15,7 +15,7 @@ export const server_CBeam  = {
 	m_nBeamType: 1880n, // client::BeamType_t  | Schema_DeclaredEnum | Size: 0x4
 	m_nBeamFlags: 1884n, // uint32_t m_nBeamFlags; |  0x75c | Schema_Builtin | Size: 0x4
 	m_hAttachEntity: 1888n, // GlobalTypes::CHandle  | Schema_FixedArray | Size: 0x28
-	m_nAttachIndex: 1928n, // GlobalTypes::AttachmentHandle_t[10]  | Schema_FixedArray | Size: 0x64
+	m_nAttachIndex: 1928n, // GlobalTypes::AttachmentHandle_t[10]  | Schema_FixedArray | Size: 0xa
 	m_fWidth: 1940n, // float32 m_fWidth; |  0x794 | Schema_Builtin | Size: 0x4
 	m_fEndWidth: 1944n, // float32 m_fEndWidth; |  0x798 | Schema_Builtin | Size: 0x4
 	m_fFadeLength: 1948n, // float32 m_fFadeLength; |  0x79c | Schema_Builtin | Size: 0x4

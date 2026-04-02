@@ -5,7 +5,7 @@
 export const animgraphlib_AimMatrixOpFixedSettings_t  = {
 	m_attachment: 0n, // modellib::CAnimAttachment  | Schema_DeclaredClass | Size: 0x80
 	m_damping: 128n, // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
-	m_poseCacheHandles: 152n, // GlobalTypes::CPoseHandle[10]  | Schema_FixedArray | Size: 0x190
+	m_poseCacheHandles: 152n, // GlobalTypes::CPoseHandle[10]  | Schema_FixedArray | Size: 0x28
 	m_eBlendMode: 192n, // animgraphlib::AimMatrixBlendMode  | Schema_DeclaredEnum | Size: 0x4
 	m_flMaxYawAngle: 196n, // float32 m_flMaxYawAngle; |  0xc4 | Schema_Builtin | Size: 0x4
 	m_flMaxPitchAngle: 200n, // float32 m_flMaxPitchAngle; |  0xc8 | Schema_Builtin | Size: 0x4

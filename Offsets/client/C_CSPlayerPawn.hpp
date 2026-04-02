@@ -128,7 +128,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_pClippingWeapon = 0x3dc0; // client::C_CSWeaponBase**  | Schema_Ptr | Size: 0x8
 				constexpr std::ptrdiff_t m_nPlayerInfernoBodyFx = 0x3dc8; // client::ParticleIndex_t  | Schema_DeclaredClass | Size: 0x4
 				constexpr std::ptrdiff_t m_angEyeAngles = 0x3dd0; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
-				constexpr std::ptrdiff_t m_arrOldEyeAnglesTimes = 0x3e60; // GlobalTypes::GameTime_t[4]  | Schema_FixedArray | Size: 0x40
+				constexpr std::ptrdiff_t m_arrOldEyeAnglesTimes = 0x3e60; // GlobalTypes::GameTime_t[4]  | Schema_FixedArray | Size: 0x10
 				constexpr std::ptrdiff_t m_arrOldEyeAngles = 0x3e70; // GlobalTypes::QAngle[4]  | Schema_FixedArray | Size: 0x30
 				constexpr std::ptrdiff_t m_angEyeAnglesVelocity = 0x3ea0; // GlobalTypes::QAngle  | Schema_Atomic | Size: 0xc
 				constexpr std::ptrdiff_t m_iIDEntIndex = 0x3eac; // GlobalTypes::CEntityIndex  | Schema_Atomic | Size: 0x4

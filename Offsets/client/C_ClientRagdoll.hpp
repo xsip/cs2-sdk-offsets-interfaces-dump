@@ -22,8 +22,8 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_iEyeAttachment = 0x1185; // modellib::AttachmentHandle_t  | Schema_DeclaredClass | Size: 0x1
 				constexpr std::ptrdiff_t m_bFadingOut = 0x1186; // bool m_bFadingOut; |  0x1186 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_flScaleEnd = 0x1188; // float32 m_flScaleEnd[10]; |  0x1188 | Schema_FixedArray | Size: 0x28
-				constexpr std::ptrdiff_t m_flScaleTimeStart = 0x11b0; // GlobalTypes::GameTime_t[10]  | Schema_FixedArray | Size: 0x190
-				constexpr std::ptrdiff_t m_flScaleTimeEnd = 0x11d8; // GlobalTypes::GameTime_t[10]  | Schema_FixedArray | Size: 0x190
+				constexpr std::ptrdiff_t m_flScaleTimeStart = 0x11b0; // GlobalTypes::GameTime_t[10]  | Schema_FixedArray | Size: 0x28
+				constexpr std::ptrdiff_t m_flScaleTimeEnd = 0x11d8; // GlobalTypes::GameTime_t[10]  | Schema_FixedArray | Size: 0x28
 			}
 		}
 	}

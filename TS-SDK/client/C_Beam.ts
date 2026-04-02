@@ -16,7 +16,7 @@ export const client_C_Beam  = {
 	m_nBeamType: 3792n, // client::BeamType_t  | Schema_DeclaredEnum | Size: 0x4
 	m_nBeamFlags: 3796n, // uint32_t m_nBeamFlags; |  0xed4 | Schema_Builtin | Size: 0x4
 	m_hAttachEntity: 3800n, // GlobalTypes::CHandle  | Schema_FixedArray | Size: 0x28
-	m_nAttachIndex: 3840n, // GlobalTypes::AttachmentHandle_t[10]  | Schema_FixedArray | Size: 0x64
+	m_nAttachIndex: 3840n, // GlobalTypes::AttachmentHandle_t[10]  | Schema_FixedArray | Size: 0xa
 	m_fWidth: 3852n, // float32 m_fWidth; |  0xf0c | Schema_Builtin | Size: 0x4
 	m_fEndWidth: 3856n, // float32 m_fEndWidth; |  0xf10 | Schema_Builtin | Size: 0x4
 	m_fFadeLength: 3860n, // float32 m_fFadeLength; |  0xf14 | Schema_Builtin | Size: 0x4

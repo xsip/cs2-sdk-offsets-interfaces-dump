@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -180,7 +180,7 @@ namespace CS2 {
 			GlobalTypes::Vector m_vecThrowPositionHistory[2]; // 0x1b6c | Schema_FixedArray | Size: 0x18
 			GlobalTypes::Vector m_vecVelocityHistory[2]; // 0x1b84 | Schema_FixedArray | Size: 0x18
 			S2_PAD(0x4);
-			// GlobalTypes::CUtlVectorEmbeddedNetworkVar<server::PredictedDamageTag_t> m_PredictedDamageTags; // 0x1ba0 | Schema_Atomic | Size: 0x68
+			// server::CUtlVectorEmbeddedNetworkVar<server::PredictedDamageTag_t> m_PredictedDamageTags; // 0x1ba0 | Schema_Atomic | Size: 0x68
 			char m_PredictedDamageTags[0x68]; // 0x1ba0 | Schema_Atomic | Size: 0x68
 			int32_t m_nHighestAppliedDamageTagTick; // 0x1c08 | Schema_Builtin | Size: 0x4
 			bool m_bCommittingSuicideOnTeamChange; // 0x1c0c | Schema_Builtin | Size: 0x1

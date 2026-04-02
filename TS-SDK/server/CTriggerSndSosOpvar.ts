@@ -5,7 +5,7 @@ import {server_CBaseTrigger} from './CBaseTrigger';
 // BaseClass: : public CS2::server::CBaseTrigger
 export const server_CTriggerSndSosOpvar  = {
 	...server_CBaseTrigger,
-	m_hTouchingPlayers: 2192n, // server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
+	m_hTouchingPlayers: 2192n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
 	m_flPosition: 2216n, // GlobalTypes::Vector  | Schema_Atomic | Size: 0xc
 	m_flCenterSize: 2228n, // float32 m_flCenterSize; |  0x8b4 | Schema_Builtin | Size: 0x4
 	m_flMinVal: 2232n, // float32 m_flMinVal; |  0x8b8 | Schema_Builtin | Size: 0x4

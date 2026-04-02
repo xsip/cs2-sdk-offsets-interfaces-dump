@@ -18,5 +18,5 @@ export const server_CTriggerHurt  = {
 	m_hurtThinkPeriod: 2240n, // float32 m_hurtThinkPeriod; |  0x8c0 | Schema_Builtin | Size: 0x4
 	m_OnHurt: 2248n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
 	m_OnHurtPlayer: 2272n, // entity2::CEntityIOOutput  | Schema_DeclaredClass | Size: 0x18
-	m_hurtEntities: 2296n, // server::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
+	m_hurtEntities: 2296n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBaseEntity>>  | Schema_Atomic | Size: 0x18
 }

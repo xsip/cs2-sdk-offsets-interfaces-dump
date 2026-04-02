@@ -17,7 +17,7 @@ namespace CS2 {
 				constexpr std::ptrdiff_t m_bMoveVarsDisabled = 0x70; // bool m_bMoveVarsDisabled; |  0x70 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bNetworkPath = 0x71; // bool m_bNetworkPath; |  0x71 | Schema_Builtin | Size: 0x1
 				constexpr std::ptrdiff_t m_bNetworkFacing = 0x72; // bool m_bNetworkFacing; |  0x72 | Schema_Builtin | Size: 0x1
-				constexpr std::ptrdiff_t m_paramHandles = 0x73; // GlobalTypes::CAnimParamHandle[34]  | Schema_FixedArray | Size: 0x908
+				constexpr std::ptrdiff_t m_paramHandles = 0x73; // GlobalTypes::CAnimParamHandle[34]  | Schema_FixedArray | Size: 0x44
 			}
 		}
 	}

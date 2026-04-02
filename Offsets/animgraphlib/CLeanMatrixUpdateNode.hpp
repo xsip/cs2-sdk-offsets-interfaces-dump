@@ -10,8 +10,8 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xF0
 			namespace CLeanMatrixUpdateNode /*: public CS2::animgraphlib::CLeafUpdateNode*/ {
-				constexpr std::ptrdiff_t m_frameCorners = 0x5c; // int32_t m_frameCorners[3]; |  0x5c | Schema_FixedArray | Size: 0x0
-				constexpr std::ptrdiff_t m_poses = 0x80; // GlobalTypes::CPoseHandle[9]  | Schema_FixedArray | Size: 0x144
+				constexpr std::ptrdiff_t m_frameCorners = 0x5c; // int32_t m_frameCorners[3][3]; |  0x5c | Schema_FixedArray | Size: 0x24
+				constexpr std::ptrdiff_t m_poses = 0x80; // GlobalTypes::CPoseHandle[9]  | Schema_FixedArray | Size: 0x24
 				constexpr std::ptrdiff_t m_damping = 0xa8; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_blendSource = 0xc0; // animgraphlib::AnimVectorSource  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_paramIndex = 0xc4; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2

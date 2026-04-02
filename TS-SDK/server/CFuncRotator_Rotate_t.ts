@@ -1,0 +1,9 @@
+// generated - do not edit!
+enum server_CFuncRotator_Rotate_t {
+	ROTATE_LOOK_AT_TARGET = 0x3,
+	ROTATE_LOOK_AT_TARGET_ONLY_YAW = 0x4,
+	ROTATE_LOOP = 0x0,
+	ROTATE_OSCILLATE = 0x1,
+	ROTATE_RETURN_TO_INITIAL_ORIENTATION = 0x5,
+	ROTATE_STOP_AT_END = 0x2
+}

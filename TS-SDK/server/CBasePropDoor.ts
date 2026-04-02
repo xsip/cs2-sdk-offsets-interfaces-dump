@@ -6,7 +6,7 @@ import {server_CDynamicProp} from './CDynamicProp';
 export const server_CBasePropDoor  = {
 	...server_CDynamicProp,
 	m_flAutoReturnDelay: 3168n, // float32 m_flAutoReturnDelay; |  0xc60 | Schema_Builtin | Size: 0x4
-	m_hDoorList: 3176n, // server::CUtlVector<GlobalTypes::CHandle<server::CBasePropDoor>>  | Schema_Atomic | Size: 0x18
+	m_hDoorList: 3176n, // GlobalTypes::CUtlVector<GlobalTypes::CHandle<server::CBasePropDoor>>  | Schema_Atomic | Size: 0x18
 	m_nHardwareType: 3200n, // int32_t m_nHardwareType; |  0xc80 | Schema_Builtin | Size: 0x4
 	m_bNeedsHardware: 3204n, // bool m_bNeedsHardware; |  0xc84 | Schema_Builtin | Size: 0x1
 	m_eDoorState: 3208n, // client::DoorState_t  | Schema_DeclaredEnum | Size: 0x4

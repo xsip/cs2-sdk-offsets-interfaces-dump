@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace physicslib {
 			// Class size: 0x130
 			namespace FeSimdQuad_t /**/ {
-				constexpr std::ptrdiff_t nNode = 0x0; // uint16_t nNode[4]; |  0x0 | Schema_FixedArray | Size: 0x0
+				constexpr std::ptrdiff_t nNode = 0x0; // uint16_t nNode[4][4]; |  0x0 | Schema_FixedArray | Size: 0x20
 				constexpr std::ptrdiff_t f4Slack = 0x20; // GlobalTypes::fltx4  | Schema_Atomic | Size: 0x10
 				constexpr std::ptrdiff_t vShape = 0x30; // GlobalTypes::FourVectors[4]  | Schema_FixedArray | Size: 0xc0
 				constexpr std::ptrdiff_t f4Weights = 0xf0; // GlobalTypes::fltx4[4]  | Schema_FixedArray | Size: 0x40

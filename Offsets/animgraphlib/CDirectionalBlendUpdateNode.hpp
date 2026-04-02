@@ -10,7 +10,7 @@ namespace CS2 {
 		namespace animgraphlib {
 			// Class size: 0xB0
 			namespace CDirectionalBlendUpdateNode /*: public CS2::animgraphlib::CLeafUpdateNode*/ {
-				constexpr std::ptrdiff_t m_hSequences = 0x5c; // GlobalTypes::HSequence[8]  | Schema_FixedArray | Size: 0x100
+				constexpr std::ptrdiff_t m_hSequences = 0x5c; // GlobalTypes::HSequence[8]  | Schema_FixedArray | Size: 0x20
 				constexpr std::ptrdiff_t m_damping = 0x80; // animgraphlib::CAnimInputDamping  | Schema_DeclaredClass | Size: 0x18
 				constexpr std::ptrdiff_t m_blendValueSource = 0x98; // animgraphlib::AnimValueSource  | Schema_DeclaredEnum | Size: 0x4
 				constexpr std::ptrdiff_t m_paramIndex = 0x9c; // animgraphlib::CAnimParamHandle  | Schema_DeclaredClass | Size: 0x2

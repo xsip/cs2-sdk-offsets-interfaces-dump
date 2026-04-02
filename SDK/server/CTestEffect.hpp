@@ -6,7 +6,7 @@
 #ifndef CUSTOM_GLOBAL_TYPES
 	#include "../GlobalTypes.hpp"
 #else
-	#include "../Custom/GlobalTypes.hpp"
+	#include <Custom/GlobalTypes.hpp>
 #endif
 
 
@@ -24,8 +24,8 @@ namespace CS2 {
 		public:
 			int32_t m_iLoop; // 0x4a8 | Schema_Builtin | Size: 0x4
 			int32_t m_iBeam; // 0x4ac | Schema_Builtin | Size: 0x4
-			// server::CHandle< CBeam > m_pBeam[24]; // 0x4b0 | Schema_FixedArray | Size: 0x60
-			char m_pBeam[0x60]; // 0x4b0 | Schema_FixedArray | Size: 0x4
+			GlobalTypes::CHandle< CBeam > m_pBeam[24]; // 0x4b0 | Schema_FixedArray | Size: 0x60
+			// char m_pBeam[0x60]; // 0x4b0 | Schema_FixedArray | Size: 0x4
 			entity2::GameTime_t m_flBeamTime[24]; // 0x510 | Schema_FixedArray | Size: 0x60
 			entity2::GameTime_t m_flStartTime; // 0x570 | Schema_DeclaredClass | Size: 0x4
 			S2_PAD(0x4); // End padding

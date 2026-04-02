@@ -29,8 +29,20 @@ using uint64 = uint64_t;
 #endif
 
 namespace GlobalTypes {
-	using Vector2D /*Vector2D*/ = char[0x8]; //  Schema_Atomic
-	using CUtlString /*CUtlString*/ = char[0x8]; //  Schema_Atomic
+
+	struct Vector2D {
+		float x;
+		float y;
+	};
+
+
+
+	// using Vector2D /*Vector2D*/ = char[0x8]; //  Schema_Atomic
+	class CUtlString {
+		const char* content;
+	};
+
+	// using CUtlString /*CUtlString*/ = char[0x8]; //  Schema_Atomic
 
 	template <typename T>
 	using CSmartPtr /*CSmartPtr< CAnimActionUpdater >*/ = char[0x8]; //  Schema_Atomic
@@ -40,28 +52,63 @@ namespace GlobalTypes {
 	using CTransform /*CTransform*/ = char[0x20]; //  Schema_Atomic
 	using VectorAligned /*VectorAligned*/ = char[0x10]; //  Schema_Atomic
 	using Color /*Color*/ = char[0x4]; //  Schema_Atomic
-	using Vector /*Vector*/ = char[0xc]; //  Schema_Atomic
+
+
+	struct Vector {
+		float x;
+		float y;
+		float z;
+	};
+	// using Vector /*Vector*/ = char[0xc]; //  Schema_Atomic
 
 
 	using KeyValues = uintptr_t;
 
-	template <typename T, int T2 = 1>
-	using CUtlVectorFixedGrowable = char[0x20];
+	template<typename T, int MAX_SIZE>
+	struct CUtlVectorFixedGrowable
+	{
+		char pad[sizeof(T*)        // m_pMemory
+			+ sizeof(int)       // m_nAllocationCount  
+			+ sizeof(int)       // m_nGrowSize
+			+ sizeof(T) * MAX_SIZE // m_Fixed
+			+ sizeof(int)       // m_Size
+			+ sizeof(int)
+			// no m_pElements in Source 2
+		];
+	};
 	template <typename T, typename T2>
 	using CEntityOutputTemplate = char[0x20];
 
 	template <typename T>
-	using CUtlVector /*CUtlVector< SampleCode >*/ = char[0x18]; //  Schema_Atomic
+	class CUtlVector {
+		std::uint32_t m_iSize;
+		char _pad[0x4];
+		T* m_pData;
+		void* pad;
+	};
+
+	// using CUtlVector /*CUtlVector< SampleCode >*/ = char[0x18]; //  Schema_Atomic
+
 	using Quaternion /*Quaternion*/ = char[0x10]; //  Schema_Atomic
 	using CAnimVariant /*CAnimVariant*/ = char[0x11]; //  Schema_Atomic
-	using QAngle /*QAngle*/ = char[0xc]; //  Schema_Atomic
+	class QAngle {
+		float x;
+		float y;
+		float z;
+	};
+	// using QAngle /*QAngle*/ = char[0xc]; //  Schema_Atomic
 	using KeyValues3 /*KeyValues3*/ = char[0x10]; //  Schema_Atomic
 	using CColorGradient /*CColorGradient*/ = char[0x18]; //  Schema_Atomic
 	using Vector4D /*Vector4D*/ = char[0x10]; //  Schema_Atomic
 	using matrix3x4_t /*matrix3x4_t*/ = char[0x30]; //  Schema_Atomic
 
 	template <typename T>
-	using CStrongHandle /*CStrongHandle< InfoForResourceTypeIMaterial2 >*/ = char[0x8]; //  Schema_Atomic
+	class CStrongHandle {
+		T* pData;
+	};
+
+	// template <typename T>
+	// using CStrongHandle /*CStrongHandle< InfoForResourceTypeIMaterial2 >*/ = char[0x8]; //  Schema_Atomic
 
 	using QuaternionStorage /*QuaternionStorage*/ = char[0x10]; //  Schema_Atomic
 
@@ -92,7 +139,12 @@ namespace GlobalTypes {
 	using CUtlVectorSIMDPaddedVector /*CUtlVectorSIMDPaddedVector*/ = char[0x18]; //  Schema_Atomic
 
 	template <typename T1>
-	using CHandle /*CHandle*/ = char[0x4]; //  Schema_Atomic
+	class CHandle {
+		std::uint32_t nIndex;
+	};
+	// using CHandle /*CHandle*/ = char[0x4]; //  Schema_Atomic
+
+
 	using VectorWS /*VectorWS*/ = char[0xc]; //  Schema_Atomic
 	using CNetworkedQuantizedFloat /*CNetworkedQuantizedFloat*/ = char[0x8]; //  Schema_Atomic
 	using CAttachmentNameSymbolWithStorage /*CAttachmentNameSymbolWithStorage*/ = char[0x20]; //  Schema_Atomic

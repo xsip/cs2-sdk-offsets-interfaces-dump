@@ -5,5 +5,5 @@ import {soundsystem_voicecontainers_CVoiceContainerAsyncGenerator} from './CVoic
 // BaseClass: : public CS2::soundsystem_voicecontainers::CVoiceContainerAsyncGenerator
 export const soundsystem_voicecontainers_CVoiceContainerStaticAdditiveSynth  = {
 	...soundsystem_voicecontainers_CVoiceContainerAsyncGenerator,
-	m_tones: 184n, // GlobalTypes::CUtlVector<soundsystem_voicecontainers::CTone>  | Schema_Atomic | Size: 0x18
+	m_tones: 184n, // GlobalTypes::CUtlVector<soundsystem_voicecontainers::CVoiceContainerStaticAdditiveSynth_CTone>  | Schema_Atomic | Size: 0x18
 }
